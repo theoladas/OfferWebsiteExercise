@@ -88,7 +88,7 @@ main {
 }
 @media screen and (max-width: 450px) {
   main {
-    padding-top: 2em;
+    padding-top: 3em;
   }
 }
 main .input-container {
