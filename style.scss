@@ -24,3 +24,31 @@ body {
   align-items: center;
   justify-content: center;
 }
+// Header / Navigaton styles
+header {
+  padding: 1.5rem;
+  background-color: white;
+  nav {
+    .logo-container {
+      width: 93px;
+      height: 107px;
+      background-color: white;
+      box-shadow: 2px 2px 35px rgb(0 0 0 / 30%);
+      position: fixed;
+      top: 0;
+      left: 5%;
+    }
+  }
+}
+// Page's Title
+h1,
+span {
+  font-size: 5rem;
+  line-height: 85px;
+  text-align: center;
+}
+span {
+  font-family: "Dekko", cursive;
+  font-style: italic;
+  color: #00a0d2;
+}
