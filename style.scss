@@ -38,6 +38,11 @@ header {
       position: fixed;
       top: 0;
       left: 5%;
+      // Media Query
+      @media screen and (max-width: 690px) {
+        width: 70px;
+        height: 95px;
+      }
     }
   }
 }

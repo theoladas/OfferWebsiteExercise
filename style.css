@@ -41,6 +41,12 @@ header nav .logo-container {
   top: 0;
   left: 5%;
 }
+@media screen and (max-width: 690px) {
+  header nav .logo-container {
+    width: 70px;
+    height: 95px;
+  }
+}
 
 h1,
 span {
