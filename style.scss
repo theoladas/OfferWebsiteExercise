@@ -76,18 +76,18 @@ span {
 main {
   min-height: 80vh;
   padding-top: 6em;
-
+  // Media Query
+  @media screen and (max-width: 450px) {
+    padding-top: 2em;
+  }
   // Input styles
   .input-container {
     margin-top: 1rem;
     position: relative;
-  }
-  // Address Broadband icon styles
-  .fa-house-signal {
-    position: absolute;
-    left: 20px;
-    top: 22px;
-    color: grey;
+    // Media Query
+    @media screen and (max-width: 315px) {
+      flex-wrap: wrap;
+    }
   }
   // Input text field for address styles
   input[type="text"] {
@@ -97,6 +97,31 @@ main {
     border: none;
     border-radius: 10px;
     border: 2px solid black;
+    // Media Queries
+    @media screen and (max-width: 525px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 415px) {
+      padding: 0.3rem 0.2rem;
+      margin: 0.2rem;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 0.8rem;
+    }
+  }
+  // Address Broadband icon styles
+  .fa-house-signal {
+    position: absolute;
+    left: 20px;
+    top: 22px;
+    color: grey;
+    // Media Queries
+    @media screen and (max-width: 525px) {
+      top: 16px;
+    }
+    @media screen and (max-width: 415px) {
+      display: none;
+    }
   }
   // Submit btn styles
   .submit-btn {
@@ -111,6 +136,13 @@ main {
     &:hover {
       background-color: black;
       color: white;
+    }
+    // Media Queries
+    @media screen and (max-width: 525px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 0.8rem;
     }
   }
 
