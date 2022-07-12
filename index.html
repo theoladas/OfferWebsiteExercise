@@ -4,7 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dekko&family=Lobster&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
     <title>Offer Website Coding Exercise</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header / Navigation-->
+    <header>
+      <nav>
+        <!-- Logo Container -->
+        <div class="logo-container">
+          <a href="https://www.drei.at/de/privat/" target="_blank"
+            ><img src="./drei-logo.svg" alt="Drei Logo"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="container flex-column">
+      <!-- Page's H1 Title -->
+      <h1>Type your address to get <span>broadband offers</span></h1>
+
+      <!-- Input Container (form) -->
+      <form class="input-container flex">
+        <!-- Input text field for address -->
+        <input
+          type="text"
+          class="input-address"
+          placeholder="Vienna"
+          name="address"
+          required
+        />
+        <!-- Font-Awesome address Broadband icon -->
+        <i class="fas fa-house-signal"></i>
+        <!-- Submit button -->
+        <button type="submit" class="submit-btn">Get Offers</button>
+      </form>
+
+      <!-- Offer Container (panel) -->
+      <div class="offer-container flex">
+        <!-- Individual Offer -->
+        <div class="offer flex-column">
+          <!-- Offer's Name -->
+          <h3 class="offer-name">Super Fast</h3>
+          <!-- Offer's Description -->
+          <h4 class="offer-description">
+            The fastest internet connection ever!
+          </h4>
+          <!-- Offer's Price Container -->
+          <div class="offer-price-container flex">
+            <!-- Font-Awesome Price icon -->
+            <i class="fas fa-euro-sign"></i>
+            <!-- Offer's Price -->
+            <h2 class="offer-price">39.00</h2>
+          </div>
+        </div>
+
+        <!-- Individual Offer -->
+        <div class="offer flex-column">
+          <!-- Offer's Name -->
+          <h3 class="offer-name">Fast</h3>
+          <!-- Offer's Description -->
+          <h4 class="offer-description">Blazing Fast Connection</h4>
+          <!-- Offer's Price Container -->
+          <div class="offer-price-container flex">
+            <!-- Font-Awesome Price icon -->
+            <i class="fas fa-euro-sign"></i>
+            <!-- Offer's Price -->
+            <h2 class="offer-price">24.50</h2>
+          </div>
+        </div>
+
+        <!-- Individual Offer -->
+        <div class="offer flex-column">
+          <!-- Offer's Name -->
+          <h3 class="offer-name">Normal</h3>
+          <!-- Offer's Description -->
+          <h4 class="offer-description">
+            If you need internet and can not afford more..
+          </h4>
+          <!-- Offer's Price Container -->
+          <div class="offer-price-container flex">
+            <!-- Font-Awesome Price icon -->
+            <i class="fas fa-euro-sign"></i>
+            <!-- Offer's Price -->
+            <h2 class="offer-price">14.90</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
