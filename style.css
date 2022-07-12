@@ -58,21 +58,21 @@ span {
   h1,
 span {
     font-size: 4rem;
-    line-height: 65px;
+    line-height: 70px;
   }
 }
 @media screen and (max-width: 450px) {
   h1,
 span {
     font-size: 3rem;
-    line-height: 55px;
+    line-height: 60px;
   }
 }
 @media screen and (max-width: 335px) {
   h1,
 span {
     font-size: 2.3rem;
-    line-height: 45px;
+    line-height: 55px;
   }
 }
 
@@ -182,15 +182,38 @@ main .offer-container .offer {
 main .offer-container .offer:hover {
   box-shadow: 0 5px 10px 0 rgba(170, 168, 168, 0.8), 0 12px 30px 0 rgba(201, 187, 187, 0.9);
 }
+@media screen and (max-width: 450px) {
+  main .offer-container .offer {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 315px) {
+  main .offer-container .offer {
+    width: 200px;
+    height: 200px;
+  }
+}
 main .offer-container .offer .offer-name {
   font-size: 2rem;
   line-height: 35px;
+}
+@media screen and (max-width: 315px) {
+  main .offer-container .offer .offer-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 main .offer-container .offer .offer-description {
   font-family: "Dekko", cursive;
   font-size: 0.9rem;
   font-style: italic;
   color: grey;
+}
+@media screen and (max-width: 315px) {
+  main .offer-container .offer .offer-description {
+    font-size: 0.7rem;
+  }
 }
 main .offer-container .offer .offer-name,
 main .offer-container .offer .offer-description {
@@ -199,6 +222,11 @@ main .offer-container .offer .offer-description {
 main .offer-container .offer .offer-price {
   font-size: 3rem;
   color: #00a0d2;
+}
+@media screen and (max-width: 315px) {
+  main .offer-container .offer .offer-price {
+    font-size: 2.5rem;
+  }
 }
 main .offer-container .offer .fa-euro-sign {
   margin-right: 0.5rem;

@@ -55,15 +55,15 @@ span {
   // Media Queries
   @media screen and (max-width: 690px) {
     font-size: 4rem;
-    line-height: 65px;
+    line-height: 70px;
   }
   @media screen and (max-width: 450px) {
     font-size: 3rem;
-    line-height: 55px;
+    line-height: 60px;
   }
   @media screen and (max-width: 335px) {
     font-size: 2.3rem;
-    line-height: 45px;
+    line-height: 55px;
   }
 }
 span {
@@ -167,11 +167,25 @@ main {
         box-shadow: 0 5px 10px 0 rgba(170, 168, 168, 0.8),
           0 12px 30px 0 rgba(201, 187, 187, 0.9);
       }
+      // Media Queries
+      @media screen and (max-width: 450px) {
+        width: 250px;
+        height: 250px;
+      }
+      @media screen and (max-width: 315px) {
+        width: 200px;
+        height: 200px;
+      }
 
       // Offer's Name
       .offer-name {
         font-size: 2rem;
         line-height: 35px;
+        // Media Query
+        @media screen and (max-width: 315px) {
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
+        }
       }
       // Offer's Description
       .offer-description {
@@ -179,6 +193,10 @@ main {
         font-size: 0.9rem;
         font-style: italic;
         color: grey;
+        // Media Query
+        @media screen and (max-width: 315px) {
+          font-size: 0.7rem;
+        }
       }
       .offer-name,
       .offer-description {
@@ -188,6 +206,10 @@ main {
       .offer-price {
         font-size: 3rem;
         color: #00a0d2;
+        // Media Query
+        @media screen and (max-width: 315px) {
+          font-size: 2.5rem;
+        }
       }
       // Offer's Price Icon
       .fa-euro-sign {
