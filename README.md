@@ -2,7 +2,7 @@
 
 <div align="center">
   <h3>
-    <a href="">
+    <a href="https://theoladas.github.io/OfferWebsiteExercise/">
       Live
     </a>
   </h3>
