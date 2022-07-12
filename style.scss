@@ -79,7 +79,6 @@ main {
     border-radius: 10px;
     border: 2px solid black;
   }
-
   // Submit btn styles
   .submit-btn {
     font-size: 1.5rem;
@@ -93,6 +92,63 @@ main {
     &:hover {
       background-color: black;
       color: white;
+    }
+  }
+
+  // Offer Container (panel) styles
+  .offer-container {
+    padding-top: 2rem;
+    flex-wrap: wrap;
+
+    // Individual Offer styles
+    .offer {
+      width: 300px;
+      height: 300px;
+      text-align: center;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(170, 168, 168, 0.2),
+        0 6px 20px 0 rgba(201, 187, 187, 0.19);
+      margin: 1rem;
+      cursor: pointer;
+      transition: box-shadow 0.4s ease;
+      &:hover {
+        box-shadow: 0 5px 10px 0 rgba(170, 168, 168, 0.8),
+          0 12px 30px 0 rgba(201, 187, 187, 0.9);
+      }
+
+      // Offer's Name
+      .offer-name {
+        font-size: 2rem;
+        line-height: 35px;
+      }
+      // Offer's Description
+      .offer-description {
+        font-family: "Dekko", cursive;
+        font-size: 0.9rem;
+        font-style: italic;
+        color: grey;
+      }
+      .offer-name,
+      .offer-description {
+        margin-bottom: 1rem;
+      }
+      // Offer's Price
+      .offer-price {
+        font-size: 3rem;
+        color: #00a0d2;
+      }
+      // Offer's Price Icon
+      .fa-euro-sign {
+        margin-right: 0.5rem;
+        font-size: 2rem;
+        color: #00a0d2;
+      }
+    }
+
+    // Active Class
+    .active-offer {
+      border: 2px solid #00a0d2;
     }
   }
 }

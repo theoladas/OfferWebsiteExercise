@@ -90,4 +90,48 @@ main .submit-btn {
 main .submit-btn:hover {
   background-color: black;
   color: white;
+}
+main .offer-container {
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+main .offer-container .offer {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(170, 168, 168, 0.2), 0 6px 20px 0 rgba(201, 187, 187, 0.19);
+  margin: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease;
+}
+main .offer-container .offer:hover {
+  box-shadow: 0 5px 10px 0 rgba(170, 168, 168, 0.8), 0 12px 30px 0 rgba(201, 187, 187, 0.9);
+}
+main .offer-container .offer .offer-name {
+  font-size: 2rem;
+  line-height: 35px;
+}
+main .offer-container .offer .offer-description {
+  font-family: "Dekko", cursive;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: grey;
+}
+main .offer-container .offer .offer-name,
+main .offer-container .offer .offer-description {
+  margin-bottom: 1rem;
+}
+main .offer-container .offer .offer-price {
+  font-size: 3rem;
+  color: #00a0d2;
+}
+main .offer-container .offer .fa-euro-sign {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  color: #00a0d2;
+}
+main .offer-container .active-offer {
+  border: 2px solid #00a0d2;
 }/*# sourceMappingURL=style.css.map */
